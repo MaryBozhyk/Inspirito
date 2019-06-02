@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="first-task">
+       <input type="text" id="number" placeholder="Enter ID from 1 to 9...">
+       <button id="info-button" onclick="getInfo()">Get info</button>
+       <div id="node-label"></div>
+    </div>
+
+    <form name="registration-form" action="" onsubmit="formSubmit()">
+        <h2>Registration form</h2>
+        <div>
+            <label for="name">Name: </label>
+            <input id="name" type="text" placeholder="type here..." required>
+        </div>
+        <div>
+            <label for="adress-1">Adress 1: </label>
+            <input id="adress-1" type="text" placeholder="type here..." required>
+        </div>
+         <div>
+            <label for="adress-2">Adress 2: </label>
+            <input id="adress-2" type="text" placeholder="type here...">
+        </div>
+         <div>
+            <label for="city">City: </label>
+            <input id="city" type="text" placeholder="type here..." required>
+        </div>
+        <div>
+            <label for="state">State: </label>
+            <select id="state" required>
+                <option value="" disabled selected hidden>Please Choose...</option>
+                <option value="UA">UA</option>
+                <option value="AT">AT</option>
+                <option value="AL">AL</option>
+                <option value="AD">AD</option>
+                <option value="BY">BY</option>
+                <option value="BE">BE</option>
+                <option value="BG">BG</option>
+                <option value="BA">BA</option>
+                <option value="HU">HU</option>
+                <option value="DE">DE</option>
+                <option value="GG">GG</option>
+                <option value="GI">GI</option>
+                <option value="GR">GR</option>
+                <option value="DK">DK</option>
+                <option value="JE">JE</option>
+                <option value="IE">IE</option>
+                <option value="IS">IS</option>
+                <option value="ES">ES</option>
+                <option value="IT">IT</option>
+                <option value="LV">LV</option>
+                <option value="LT">LT</option>
+                <option value="LI">LI</option>
+                <option value="LU">LU</option>
+                <option value="MK">MK</option>
+                <option value="MT">MT</option>
+                <option value="MD">MD</option>
+                <option value="MC">MC</option>
+                <option value="NL">NL</option>
+                <option value="NO">NO</option>
+                <option value="IM">IM</option>
+                <option value="VA">VA</option>
+                <option value="PL">PL</option>
+                <option value="PT">PT</option>
+                <option value="RU">RU</option>
+                <option value="RO">RO</option>
+                <option value="SM">SM</option>
+                <option value="RS">RS</option>
+                <option value="SK">SK</option>
+                <option value="SI">SI</option>
+                <option value="GB">GB</option>
+                <option value="FO">FO</option>
+                <option value="FI">FI</option>
+                <option value="FR">FR</option>
+                <option value="HR">HR</option>
+                <option value="ME">ME</option>
+                <option value="CZ">CZ</option>
+                <option value="CH">CH</option>
+                <option value="SE">SE</option>
+                <option value="SJ">SJ</option>
+                <option value="АХ">АХ</option>
+                <option value="EE">EE</option>
+            </select>            
+        </div>
+        <div>
+            <label for="zip-code">Zip Code: </label>
+            <input id="zip-code" type="text" placeholder="type here..." required>
+        </div>
+        <p id="name-error">Not correct format of name!</p>
+        <p id="adress-1-error">Not correct format of adress-1!</p>
+        <p id="adress-2-error">Not correct format of adress-2!</p>
+        <p id="city-error">Not correct format of city!</p>
+        <p id="state-error">Not correct format of state!</p>
+        <p id="zip-code-error">Not correct format of zip-code!</p>
+        <button type="button" onclick="formSubmit()">OK</button>
+        <button type="button" onclick="resetForm()">Cancel</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
