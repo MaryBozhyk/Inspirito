@@ -1,4 +1,4 @@
-Running application instruction
+# Running application instruction
 
 
 First of all, please run the server: https://github.com/MaryBozhyk/Inspirito/blob/master/server/server.js
